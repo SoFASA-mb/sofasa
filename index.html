@@ -8,10 +8,25 @@
 <header>
   <nav><ul>
     <li><a href=""><p>something</p></a></li>
-    <li><a href=""><p>something</p></a></li>
-    <li><a href=""><p>council members</p></a></li>
+    <li><a href="council.html"><p>council members</p></a></li>
     <li><a href=""><p>resources</p></a></li>
-    <li><a href=""><p>forms</p></a></li>
+    <li><div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">Links
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <p>SoFASA</p>
+        <a href="https://docs.google.com/document/d/1QVrMd6Xh-K1LfO8GGfl3U9G9Tt30-Ep80lLFpXsXJ-k">SEIF Application</a>
+        <a href="https://docs.google.com/document/d/16y9smaNcgg8L6zgToNIbXSd77MYhYzmQTVYYytAW66U">Council Nomination Forms</a>
+        <p>School of Art</p>
+        <a href="https://umanitoba.ca/art/student-forms">Student Forms</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <p>University</p>
+        <a href="https://umanitoba.ca/research/opportunities-support/undergraduate-research-awards">Undergraduate Research Award</a>
+      </div>
+      </div> 
+      </li>
   </ul></nav>
 </header>
 
@@ -44,7 +59,23 @@
             about this site
           </p>
         </a>
-            
+        <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+            }
+          }
+          </script>
         </body>
 
     

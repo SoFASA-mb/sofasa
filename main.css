@@ -46,6 +46,48 @@ circle {
 }
 }
 
+
+.dropdown {
+  right: 0;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer; 
+  border: none;
+  outline: none;
+  color: rgb(80, 56, 56);
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(33, 162, 172);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(20, 1, 1);
+}
+
+.show {
+  display: block;
+}
+
+
 /*parallax stuff*/
 .parallax {
     height: 500px; /* fallback for older browsers */
