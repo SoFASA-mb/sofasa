@@ -8,6 +8,10 @@
     text-align: center;
 }
 
+circle {
+  fill:rgba(178, 194, 119, 0.712)
+}
+
 .about {
   position: fixed;
   bottom: -2px;
