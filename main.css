@@ -13,6 +13,7 @@ nav ul {
   position:fixed;
   display: inline-block;
   right: 10px;
+  z-index: 3;
 }
 
 nav li {
@@ -23,6 +24,7 @@ nav li {
 
 circle {
   fill:rgba(178, 194, 119, 0.712)
+  
 }
 
 .about {
