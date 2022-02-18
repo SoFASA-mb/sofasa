@@ -3,3 +3,8 @@ p {
     padding: 15vw;
     font-size: large;
 }
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
