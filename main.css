@@ -91,6 +91,7 @@ circle {
   text-decoration: none;
   display: block;
   text-align: left;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .dropdown-content a:hover {
