@@ -8,6 +8,19 @@
     text-align: center;
 }
 
+nav ul {
+  list-style-type: none;
+  position:fixed;
+  display: inline-block;
+  right: 10px;
+}
+
+nav li {
+  float: left;
+  padding: 1vw;
+  align-content: center;
+}
+
 circle {
   fill:rgba(178, 194, 119, 0.712)
 }
@@ -18,7 +31,7 @@ circle {
   text-align: center;
   left: 50%;
   transform: translate(-50%,-50%);
-  color: rgba(178, 194, 119, 0.712);
+  color: rgba(112, 105, 44, 0.712);
   animation: glow 2s cubic-bezier(0.43, -0.29, 0.18, 1.74) infinite alternate-reverse}
 
 
