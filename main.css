@@ -24,6 +24,11 @@ nav li {
   font-size: 1em;
 }
 
+li a {
+  text-decoration: none;
+  color: rgba(112, 105, 44, 1);
+}
+
 circle {
   fill:rgba(178, 194, 119, 0.712)
   
@@ -36,7 +41,8 @@ circle {
   left: 50%;
   transform: translate(-50%,-50%);
   color: rgba(112, 105, 44, 0.712);
-  animation: glow 2s cubic-bezier(0.43, -0.29, 0.18, 1.74) infinite alternate-reverse}
+  animation: glow 2s cubic-bezier(0.43, -0.29, 0.18, 1.74) infinite alternate-reverse;
+}
 
 
 @-webkit-keyframes glow {
@@ -57,7 +63,7 @@ circle {
   cursor: pointer; 
   border: none;
   outline: none;
-  color: rgb(80, 56, 56);
+  color: rgba(112, 105, 44, 1);
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -75,7 +81,7 @@ circle {
 
 .dropdown-content a {
   float: none;
-  color: rgb(33, 162, 172);
+  color: rgba(112, 105, 44, 1);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
