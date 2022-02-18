@@ -96,6 +96,18 @@ circle {
   display: block;
 }
 
+body {
+  background: linear-gradient(200deg, #ffffff, #737b52);
+  background-size: 400% 400%;
+  z-index: -1;
+  animation: AnimationName 22s cubic-bezier(0.43, 0, 0.18, 1) infinite alternate-reverse;
+}
+
+@keyframes AnimationName {
+  0%{background-position:0% 5%}
+  50%{background-position:100% 96%}
+  100%{background-position:0% 5%}
+}
 
 /*parallax stuff*/
 .parallax {
