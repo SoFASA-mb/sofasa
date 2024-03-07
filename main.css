@@ -156,3 +156,46 @@ body {
     transform: translateZ(-600px) scale(3);
     z-index: 2;
   }
+
+@import url(https://fonts.googleapis.com/css?family=Lobster|Oswald:400,700,300);
+.square {
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+
+.square2 {
+  position: absolute;
+  text-align: center;
+  height: 190px;
+  width: 190px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+svg {
+  position: absolute;
+  z-index: -1;
+  -webkit-animation: rotation 30s infinite;
+  animation: rotation 5s infinite;
+}
+  @-webkit-keyframes rotation {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+  }
+  @keyframes rotation {
+    0% {transform:rotate(0deg); opacity:.8;}
+    100% {transform:rotate(360deg); opacity:0;}
+  }
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 45px;
+  font-weight: 300;
+  margin: 28px 0 0;
+}
