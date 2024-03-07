@@ -178,7 +178,7 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
-svg {
+.animate {
   position: absolute;
   z-index: -1;
   -webkit-animation: rotation 30s infinite;
