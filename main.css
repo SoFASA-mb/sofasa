@@ -1,5 +1,6 @@
 body {
   cursor: url('couch-cursor.png'), auto;
+  padding: 0;
   margin: 0;
 }
 
@@ -26,6 +27,8 @@ body {
   border-radius: 20px;
   width: 10px;
   height: 10px;
+  max-width: 10px;
+  max-height: 10px;
   margin-right: 10px;
   padding: 10px;
 }
@@ -347,11 +350,8 @@ body {
 
 @media screen and (max-width: 479px) {
   .nav {
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .nav-heading {
@@ -430,20 +430,44 @@ body {
   .footer-social-block-two {
     margin-top: 20px;
   }
+
+  .link-block {
+    padding-top: 15px;
+  }
+
+  .helvetica {
+    font-size: 75px;
+  }
+
+  .studio460 {
+    
+  }
 }
 
 .helvetica {
   font-family: Helvetica, Arial, sans-serif;
-  color: red;
-  font-size: 175px;
+  color: white;
+  line-height: 0.9;
 }
 
 .helvetica:hover {
   color: rgb(200, 0, 0);
 }
 
+/* Sections */
+
 .main-sections {
   justify-items: center;
+}
+
+.studio460 {
+  background-color: red;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.studio460 p {
+  color: white;
 }
 
 /* Marquee Animation */
