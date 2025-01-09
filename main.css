@@ -1,5 +1,6 @@
 body {
   cursor: url('couch-cursor.png'), auto;
+  margin: 0;
 }
 
 .nav {
