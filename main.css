@@ -1,7 +1,17 @@
+h1, h2, h3, h4, h5, h6, p, img {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 body {
   cursor: url('couch-cursor.png'), auto;
   padding: 0;
   margin: 0;
+  font-family: Greenhouse Prune, Arial, sans-serif;
 }
 
 .nav {
@@ -302,6 +312,71 @@ body {
   background-color: #fff;
 }
 
+.center-section {
+  justify-items: center;
+}
+
+.top-heading-hero {
+  padding-top: 10vh;
+  padding-bottom: 6vh;
+}
+
+.bio-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 275px 275px 275px 275px;
+}
+
+.bio-grid-picture {
+  width: 275px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 350px;
+}
+
+.bio-grid-info {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.bio-grid-name {
+  font-size: 35px;
+  line-height: normal;
+}
+
+.bio-grid-position {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.helvetica {
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  line-height: 0.9;
+}
+
+.helvetica:hover {
+  color: rgb(200, 0, 0);
+}
+
+/* Sections */
+
+.main-sections {
+  justify-items: center;
+}
+
+.studio460 {
+  background-color: red;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.studio460 p {
+  color: white;
+}
+
 @media screen and (max-width: 991px) {
   .container-2 {
     max-width: 728px;
@@ -437,32 +512,18 @@ body {
   .studio460 {
     justify-items: left !important;
   }
-}
 
-.helvetica {
-  font-family: Helvetica, Arial, sans-serif;
-  color: white;
-  line-height: 0.9;
-}
+  .bio-grid {
+    grid-template-columns: 1fr auto;
+  }
 
-.helvetica:hover {
-  color: rgb(200, 0, 0);
-}
+  .bio-grid-picture {
+    max-width: fit-content;
+  }
 
-/* Sections */
-
-.main-sections {
-  justify-items: center;
-}
-
-.studio460 {
-  background-color: red;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.studio460 p {
-  color: white;
+  .bio-grid-info {
+    max-width: fit-content;
+  }
 }
 
 /* Marquee Animation */
@@ -476,6 +537,8 @@ body {
 }
 
 .marquee p {
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: inline-block;
   padding-left: 100%;
   animation: marquee 15s linear infinite;
