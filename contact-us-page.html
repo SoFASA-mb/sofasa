@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SOFASA</title>
+  <link rel="icon" type="image/x-icon" href="Red_dot_sofasa.png">
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <script>
+        function getStylesheet() {
+              var currentTime = new Date().getHours();
+              if (0 <= currentTime&&currentTime < 5) {
+               document.write("<link rel='stylesheet' href='nightshift.css' type='text/css'>");
+              }
+              if (18 <= currentTime&&currentTime < 24) {
+               document.write("<link rel='stylesheet' href='nightshift.css' type='text/css'>");
+              }
+        }
+        
+        getStylesheet();
+        </script>
+
+    <div class="marquee">
+        <p>Website is Under Construction!</p>
+    </div>
+
+    <div class="wrapper">
+        <div class="nav">
+            <a href="index.html" class="footer-brand w-inline-block">
+                <div class="side-align">
+                    <div class="red-circle"></div>
+                    <h4 class="nav-heading">School of Fine Arts Student Association</h4>
+                </div>
+            </a>
+            <div class="link-block">
+                <a href="#" class="nav-link">
+                    <h4 class="nav-link">Student Gallery</h4>
+                </a>
+                <a href="#" class="nav-link">
+                    <h4 class="nav-link">Ressources</h4>
+                </a>
+                <a href="contact-us-page.html" class="nav-link">
+                    <h4 class="nav-link">Contact</h4>
+                </a>
+            </div>
+        </div>
+        
+        <section>
+            <div class="top-heading-hero">
+                <h1 class="large-heading">Get in touch!</h1>
+            </div>
+            <div class="red-section">
+                <p class="hero-paragraph">For any assistance, concerns, and questions, please contact us:<br><br>sofasa@gmail.com</p>
+            </div>
+        </section>
+
+<section class="footer-light">
+    <div class="container-2">
+        <div class="footer-wrapper-two">
+            <a href="#" class="footer-brand w-inline-block">
+                <div class="side-align">
+                    <div class="red-circle"></div>
+                    <h4 class="nav-heading">School of Fine Arts Student Association</h4>
+                </div>
+            </a>
+            <div class="footer-block-two">
+                <div class="footer-title">About Us</div>
+                <a href="#" class="footer-link-two">Who are we?</a>
+                <a href="team-page.html" class="footer-link-two">The team</a>
+                <a href="contact-us-page.html" class="footer-link-two">Contact us</a>
+            </div>
+            <div class="footer-block-two">
+                <div class="footer-title">Quick Links</div>
+                <a href="#" class="footer-link-two">The Student Gallery</a>
+                <a href="#" class="footer-link-two">Events</a>
+                <a href="#" class="footer-link-two">CHESTERFIELD</a>
+            </div>
+            <div class="footer-block-two">
+                <div class="footer-title">Ressources</div>
+                <a href="#" class="footer-link-two">Our constitution</a>
+                <a href="#" class="footer-link-two">Meeting Minutes</a>
+                <a href="#" class="footer-link-two">SEIF Application</a>
+                <a href="#" class="footer-link-two">Join our council</a>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+</body>
+</html>

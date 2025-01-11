@@ -328,7 +328,6 @@ body {
 }
 
 .bio-grid-picture {
-  width: 275px;
   border-radius: 10px;
   overflow: hidden;
   max-height: 350px;
@@ -339,6 +338,7 @@ body {
   color: white;
   border-radius: 10px;
   padding: 15px;
+  max-height: 350px;
 }
 
 .bio-grid-name {
@@ -367,13 +367,13 @@ body {
   justify-items: center;
 }
 
-.studio460 {
+.red-section {
   background-color: red;
   padding: 15px;
   border-radius: 10px;
 }
 
-.studio460 p {
+.red-section p {
   color: white;
 }
 
@@ -509,20 +509,41 @@ body {
     font-size: 50px;
   }
 
-  .studio460 {
+  .red-section {
     justify-items: left !important;
   }
 
   .bio-grid {
-    grid-template-columns: 1fr auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .bio-grid-picture {
-    max-width: fit-content;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+  }
+
+  .bio-grid-name {
+    font-size: 25px;
+    line-height: 1;
   }
 
   .bio-grid-info {
-    max-width: fit-content;
+    font-size: 13px;
+  }
+
+  .bio-grid-position {
+    padding-top: 12px;
+    font-size: 15px;
+  }
+
+  .bio-grid-bio {
+    display: none;
   }
 }
 
