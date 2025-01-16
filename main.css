@@ -349,8 +349,8 @@ body {
 
 .helvetica {
   font-family: Helvetica, Arial, sans-serif;
-  color: white;
   line-height: 0.9;
+  font-size: 60px;
 }
 
 .helvetica:hover {
@@ -361,6 +361,10 @@ body {
   text-align: left;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 /* Sections */
 
 .main-sections {
@@ -369,6 +373,7 @@ body {
 
 .red-section {
   background-color: red;
+  color: white;
   padding: 15px;
   border-radius: 10px;
 }
@@ -384,6 +389,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
+  color: white;
 }
 
 .half-section img {
