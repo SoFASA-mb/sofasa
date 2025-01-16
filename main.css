@@ -105,7 +105,7 @@ body {
 }
 
 .mid-spacer {
-  padding-top: 35px;
+  padding-top: 10px;
 }
 
 .hero-paragraph {
@@ -312,10 +312,6 @@ body {
   background-color: #fff;
 }
 
-.center-section {
-  justify-items: center;
-}
-
 .top-heading-hero {
   padding-top: 10vh;
   padding-bottom: 6vh;
@@ -361,6 +357,10 @@ body {
   color: rgb(200, 0, 0);
 }
 
+.text-align-left {
+  text-align: left;
+}
+
 /* Sections */
 
 .main-sections {
@@ -377,51 +377,34 @@ body {
   color: white;
 }
 
-@media screen and (max-width: 991px) {
-  .container-2 {
-    max-width: 728px;
-  }
-
-  .footer-wrapper-two {
-    flex-wrap: wrap;
-  }
-
-  .footer-form {
-    width: 100%;
-    margin-top: 40px;
-  }
-
-  .footer-form-container {
-    max-width: 350px;
-  }
+.half-section {
+  padding-top: 10vh;
+  height: 70vh;
+  max-height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
 }
 
-@media screen and (max-width: 767px) {
-
-  .footer-bottom {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .footer-copyright {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  .footer-social-block-two {
-    margin-top: 20px;
-  }
-
-  .footer-social-link {
-    margin-left: 20px;
-  }
+.half-section img {
+  max-height: 70vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
+
+.center-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Phone Responsiveness */
 
 @media screen and (max-width: 479px) {
   .nav {
     flex-direction: column;
-    align-items: flex-start;
   }
 
   .nav-heading {
@@ -501,6 +484,11 @@ body {
     margin-top: 20px;
   }
 
+  .footer-brand {
+    display: flex;
+    width: 100%;
+  }
+
   .link-block {
     padding-top: 15px;
   }
@@ -511,6 +499,7 @@ body {
 
   .red-section {
     justify-items: left !important;
+    align-items: flex-start;
   }
 
   .bio-grid {
@@ -544,6 +533,12 @@ body {
 
   .bio-grid-bio {
     display: none;
+  }
+
+  .half-section {
+    grid-template-columns: none;
+    max-height: none;
+    height: auto;
   }
 }
 
