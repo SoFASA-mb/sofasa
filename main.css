@@ -326,6 +326,8 @@ body {
 .bio-grid-picture {
   border-radius: 10px;
   overflow: hidden;
+  width: 350px;
+  height: 445px;
 }
 
 .bio-grid-info {
@@ -518,7 +520,6 @@ body {
     object-fit: cover;
     display: flex;
     justify-content: center;
-	width: 100%;
   }
 
   .bio-grid-name {
