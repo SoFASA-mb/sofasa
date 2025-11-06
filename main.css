@@ -320,7 +320,7 @@ body {
 .bio-grid {
   display: grid;
   gap: 15px;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .bio-grid-picture {
