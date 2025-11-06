@@ -320,11 +320,12 @@ body {
 .bio-grid {
   display: grid;
   gap: 15px;
-  grid-template-columns: 400px 400px;
+  grid-template-columns: 400px 400px 400px;
 }
 
 .bio-grid-picture {
   border-radius: 10px;
+  display: flex;
   overflow: hidden;
   width: 350px;
   height: 445px;
