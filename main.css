@@ -509,11 +509,10 @@ body {
   }
 
   .bio-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
     gap: 15px;
-    width: 100%;
     margin: 0 auto;
+	flex-direction: column;
   }
 
   .bio-grid-picture {
