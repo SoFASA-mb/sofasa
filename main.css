@@ -518,6 +518,7 @@ body {
     object-fit: cover;
     display: flex;
     justify-content: center;
+	width: 100%;
   }
 
   .bio-grid-name {
