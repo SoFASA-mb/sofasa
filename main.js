@@ -1,4 +1,4 @@
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
   const revealItems = document.querySelectorAll('.reveal-text');
@@ -49,4 +49,4 @@
   revealItems.forEach(function (item) {
     observer.observe(item);
   });
-})();
+});
