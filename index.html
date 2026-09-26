@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>School of Art Student Association</title>
   <meta name="description" content="Static homepage recreation for the School of Art Student Association.">
-  <link rel="stylesheet" href="main.css">
-  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
   <header class="site-header">
     <div class="brand">
       <span class="brand-mark" aria-hidden="true"></span>
-      <a href="#" class="brand-name">School of Art Student Association</a>
+      <a href="index.html" class="brand-name">School of Art Student Association</a>
     </div>
 
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
@@ -23,10 +23,10 @@
     </button>
 
     <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-      <a href="#" class="is-active">Home</a>
-      <!-- <a href="#">About</a>
-      <a href="#">Studio 460</a>
-      <a href="#">Resources</a>
+      <a href="index.html" class="is-active">Home</a>
+      <!-- <a href="#">About</a> -->
+      <a href="studio-460.html">Studio 460</a>
+      <!-- <a href="#">Resources</a>
       <a href="#">Student Gallery</a>
       <a href="#">Merch</a>
       <a href="#">Contact</a>
@@ -39,23 +39,16 @@
       <div class="hero-heading-wrap">
         <h1 id="hero-title" class="reveal-text">Welcome to Sofasa</h1>
       </div>
-
-      <div class="hero-banner">
-        <img src="out on the town post horizontal.png" alt="Students wearing graduation hoodies in a graffiti-covered stairwell." width="1600" height="760" loading="eager">
-        <div class="hero-overlay">
-          <p class="eyebrow reveal-text">Graduation Hoodies 2026</p>
-          <p class="hero-subcopy reveal-text">We survived art school together.</p>
-          <a href="https://sofasa.square.site/" class="button-link reveal-text">SHOP NOW <span aria-hidden="true">&#8250;</span></a>
-        </div>
-      </div>
     </section>
 
     <section class="feature-panel" aria-labelledby="studio-title">
       <div class="feature-copy">
-        <h2 id="studio-title" class="reveal-text">Studio 460 <span aria-hidden="true">&#8600;</span></h2>
+        <a href="studio-460.html">
+          <h2 id="studio-title" class="reveal-text">Studio 460 <span aria-hidden="true">&#8600;</span></h2>
+        </a>
       </div>
       <div class="feature-media">
-        <img src="sofasa-image-hero.jpg" alt="Students gathered around a long table in a bright studio classroom." width="1600" height="960" loading="lazy">
+        <img src="assets/sofasa-image-hero.jpg" alt="Students gathered around a long table in a bright studio classroom." width="1600" height="960" loading="lazy">
       </div>
     </section>
   </main>
@@ -63,11 +56,11 @@
   <footer class="site-footer">
     <div class="footer-brand">
       <span class="brand-mark" aria-hidden="true"></span>
-      <a href="#" class="brand-name reveal-text">School of Art Student Association</a>
+      <a href="index.html" class="brand-name">School of Art Student Association</a>
     </div>
 
     <section class="footer-links" aria-labelledby="resources-title">
-      <h2 id="resources-title" class="reveal-text">Resources</h2>
+      <h2 id="resources-title">Resources</h2>
       <ul>
         <li><a href="https://drive.google.com/file/d/1bM86fQO6i-40Nm-RKfJKt1XZxW6D1Tt1/view" class="reveal-text">SEIF</a></li>
         <li><a href="" class="reveal-text">Our Constitution</a></li>
